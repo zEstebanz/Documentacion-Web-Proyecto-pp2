@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section-Cover */
+.section-cover {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('/DocumentoWeb/src/img/cover.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    user-select: none;
+
+    height: 70vh;
+    margin-bottom: 50px;
+    border-style: solid;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    user-select: none;
+
+    .title-cover {
+        padding-top: 75px;
+
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 100px;
+            text-decoration: solid;
+            font-weight: 500;
+            color: white;
+        }
+
+        h3 {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 700;
+            color: rgb(189, 189, 189);
+        }
+
+    }
+}
+
+/* End Section-Cover*/
+
+.section-doc {
+    .title-doc {
+
+        margin-left: 20px;
+
+        .box-title-doc {
+            border-style: solid;
+            width: fit-content;
+        }
+
+        .img-doc {
+            width: 600px;
+            height: 300px;
+            border-style: solid;
+        }
+    }
+}
+

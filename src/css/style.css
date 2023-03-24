@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Section-Cover */
+.section-cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/DocumentoWeb/src/img/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  height: 70vh;
+  margin-bottom: 50px;
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  user-select: none;
+}
+.section-cover .title-cover {
+  padding-top: 75px;
+}
+.section-cover .title-cover h1 {
+  text-align: center;
+  color: black;
+  font-size: 100px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-weight: 500;
+  color: white;
+}
+.section-cover .title-cover h3 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(189, 189, 189);
+}
+
+/* End Section-Cover*/
+.section-doc .title-doc {
+  margin-left: 20px;
+}
+.section-doc .title-doc .box-title-doc {
+  border-style: solid;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-doc .title-doc .img-doc {
+  width: 600px;
+  height: 300px;
+  border-style: solid;
+}/*# sourceMappingURL=style.css.map */
