@@ -4,11 +4,86 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Nav*/
+.nav {
+
+    /* Estilos para la barra de navegación */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #292929;
+    z-index: 9999;
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+  
+    .logo a {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+    }
+  
+    .menu li {
+      margin-right: 20px;
+    }
+  
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    /* Estilos para la barra de navegación en dispositivos móviles */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+  
+      .toggle {
+        display: block;
+        cursor: pointer;
+      }
+  
+      .bars {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px 0;
+      }
+  
+      .toggle.active .bars:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .toggle.active .bars:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+  
+      .toggle.active .bars:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+  
+  }
+  
+/* End Nav*/
+
 /* Section-Cover */
 .section-cover {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('/Documentacion-Web-Proyecto-pp2/src/img/cover.jpg');
+            rgba(0, 0, 0, 0.5)), url('/src/img/cover.jpg');
 
     background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +100,7 @@
     user-select: none;
 
     .title-cover {
-        padding-top: 75px;
+        padding-top: 150px;
 
         h1 {
             text-align: center;
@@ -43,8 +118,8 @@
 
     }
 }
-
 /* End Section-Cover*/
+
 
 .section-doc {
     .title-doc {
@@ -118,7 +193,6 @@ h3,
 h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.2;
-    font-size: 90px;
 }
 
 img {

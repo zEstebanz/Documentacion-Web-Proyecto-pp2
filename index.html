@@ -7,11 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocumentoWeb</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <!-- Nav -->
+    <header class="nav">
+        <nav>
+          <div class="logo">
+            <a href="/index.html">Inicio</a>
+          </div>
+          <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- End Nav -->
 
     <!-- Section Principal -->
     <section class="section-cover">
@@ -29,22 +42,41 @@
             <main class="blog">
                 <h3 class="centrar-texto">Información</h3>
 
+                <!-- Inicio de un articulo -->
                 <article class="entrada">
 
 
                     <div class="entrada__imagen">
                         <picture>
-                            <h4 class="no-margin">Documentación de GITHUB:</h4>
+                            <h4 class="no-margin">Colaborador de GITHUB, ¿Como iniciar una nueva rama de trabajo? </h4>
                             <img loading="lazy" src="src/img/github.jpeg" alt="imagen blog">
                         </picture>
                     </div>
 
                     <div class="entrada__contenido">
-                        <p>Comandos para trabajar en el proyecto, comandos basicos...</p>
-                        <a href="#contact" class="boton boton--primario">Consultar</a>
+                        <p>Si eres un colaborador en nuestro repositorio de GitHub, sigue los siguientes pasos que te mostratemos a continuación...</p>
+                        <a href="/Doc/colaboradorGitHub.html" class="boton boton--primario">Consultar</a>
                     </div>
 
                 </article>
+                <!-- Fin de un articulo -->
+
+                <article class="entrada">
+
+
+                    <div class="entrada__imagen">
+                        <picture>
+                            <h4 class="no-margin">Partes de Codigos</h4>
+                            <br>
+                        </picture>
+                    </div>
+
+                    <div class="entrada__contenido">
+                        <a href="/Doc/codigo.html" class="boton boton--primario">Consultar</a>
+                    </div>
+
+                </article>
+                <!-- Fin de un articulo -->
 
                 <article class="entrada">
                     <!-- <div class="entrada__imagen">
@@ -95,6 +127,9 @@
             </main>
 
             <aside class="sidebar">
+                <br>
+                <br>
+                <br>
                 <h3>Accesos directos a herramientas</h3>
 
                 <ul class="cursos no-padding">

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo</title>
+    <!-- Librerias -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/styleDoc.css">
+</head>
+
+<body>
+
+    <section class="section-cod">
+        <pre>
+    <code class="html">
+      <!-- Aquí va tu código HTML -->
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="es"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;Ejemplo&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Hola mundo!&lt;/h1&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </code>
+  </pre>
+        <button class="copy-button">Copiar</button>
+    </section>
+
+</body>
+
+<script>
+    // Seleccionamos todos los elementos <code> con la clase "html"
+var codeBlocks = document.querySelectorAll("code.html");
+
+// Iteramos por cada bloque de código y los resaltamos
+codeBlocks.forEach(function(block) {
+  hljs.highlightBlock(block);
+});
+
+// Añadimos funcionalidad al botón de copiar
+var copyButtons = document.querySelectorAll(".copy-button");
+
+copyButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    var codeBlock = this.parentNode.querySelector("code");
+    var range = document.createRange();
+    range.selectNode(codeBlock);
+    window.getSelection().addRange(range);
+
+    try {
+      // Intentamos copiar el código seleccionado
+      var successful = document.execCommand("copy");
+      var msg = successful ? "¡Código copiado al portapapeles!" : "Error al copiar el código";
+      console.log(msg);
+    } catch (err) {
+      console.log("Error al copiar el código");
+    }
+
+    // Quitamos la selección del texto
+    window.getSelection().removeAllRanges();
+  });
+});
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.nav {
+  /* Estilos para la barra de navegación */
+  /* Estilos para la barra de navegación en dispositivos móviles */
+}
+.nav header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+.nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+.nav .menu {
+  display: flex;
+  list-style: none;
+}
+.nav .menu li {
+  margin-right: 20px;
+}
+.nav .menu a {
+  color: #000;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .nav .menu {
+    display: none;
+  }
+  .nav .toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .nav .bars {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  .nav .toggle.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  .nav .toggle.active .bars:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .nav .toggle.active .bars:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+.section-cod {
+  /* Estilos para el botón de copiar */
+  /* Estilos para el botón de copiar al pasar el cursor por encima */
+  /* Estilos para la sección del código */
+  /* Estilos para el botón de copiar */
+}
+.section-cod .copy-button {
+  background-color: #1c6d70;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.section-cod .copy-button:hover {
+  background-color: #155468;
+}
+.section-cod section {
+  position: relative;
+  margin-bottom: 30px;
+}
+.section-cod .copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.section-article pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1.3em;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  text-align: justify;
+}/*# sourceMappingURL=styleDoc.css.map */
