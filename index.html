@@ -13,34 +13,35 @@
 
     <!-- Nav -->
     <header class="nav">
-        <nav>
-          <div class="logo">
-            <a href="/index.html">Inicio</a>
-          </div>
-          <ul class="menu">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-          </ul>
+        <nav class="navbar">
+            <button class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#doc">Información</a></li>
+                <li><a href="#rep">Repositorio</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
     <!-- End Nav -->
 
     <!-- Section Principal -->
     <section class="section-cover">
         <div class="title-cover">
             <h3>TODA LA DOCUMENTACION DEL PROYECTO EN ESTA WEB</h3>
-            <h1>Documentacion del Proyecto PP2</h1>
         </div>
     </section>
     <!-- End Section Principal -->
 
     <!-- Section Doc -->
-    <section class="Documentacion">
+    <section class="section-doc" id="doc">
 
         <div class="contenedor contenido-principal" id="services">
             <main class="blog">
-                <h3 class="centrar-texto">Información</h3>
+                <h3 class="centrar-texto">INFORMACIÓN</h3>
 
                 <!-- Inicio de un articulo -->
                 <article class="entrada">
@@ -54,7 +55,8 @@
                     </div>
 
                     <div class="entrada__contenido">
-                        <p>Si eres un colaborador en nuestro repositorio de GitHub, sigue los siguientes pasos que te mostratemos a continuación...</p>
+                        <p>Si eres un colaborador en nuestro repositorio de GitHub, sigue los siguientes pasos que te
+                            mostratemos a continuación...</p>
                         <a href="/Doc/colaboradorGitHub.html" class="boton boton--primario">Consultar</a>
                     </div>
 
@@ -126,32 +128,28 @@
                 </article>
             </main>
 
-            <aside class="sidebar">
-                <br>
-                <br>
-                <br>
-                <h3>Accesos directos a herramientas</h3>
+            <aside class="sidebar" id="rep">
 
+                <h3>Accesos directos a herramientas</h3>
+                <hr>
                 <ul class="cursos no-padding">
 
                     <li class="widget-curso">
-                        <hr>
-                        <br>
-
-                        <h3 class="no-margin"> GITHUB</h3>
-
-                        <img src="src/img/Logo System Tech.png" alt="">
-
-                        <p class="widget-curso__label">Repositorio del Proyecto
-                            <span class="widget-curso__info"><a href=""> <br> Aqui</a></span>
+                        <p class="widget-curso__label">
+                            <span class="widget-curso__info"><a href="">Repositorio del Proyecto</a></span>
                         </p>
-                        <p class="widget-curso__label">Repositorio de Pruebas
-                            <span class="widget-curso__info"><a href=""> <br> Aqui</a></span>
-                        </p>
-                        <p class="widget-curso__label">Repositorio pagina web
-                            <span class="widget-curso__info"><a href=""> <br> Aqui</a></span>
-                        </p>
+                    </li>
 
+                    <li class="widget-curso">
+                        <p class="widget-curso__label">
+                            <span class="widget-curso__info"><a href="">Repositorio de Pruebas</a></span>
+                        </p>
+                    </li>
+
+                    <li class="widget-curso">
+                        <p class="widget-curso__label">
+                            <span class="widget-curso__info"><a href="">Repositorio Pagina Web</a></span>
+                        </p>
                     </li>
 
                 </ul>
@@ -161,6 +159,7 @@
     </section>
     <!-- End Section Doc -->
 
+    <!-- Section Footer -->
     <section class="section-footer">
 
         <footer>
@@ -168,7 +167,9 @@
         </footer>
 
     </section>
-
+    <!-- End Section Footer -->
 </body>
+
+<script src="src/js/nav.js"></script>
 
 </html>
