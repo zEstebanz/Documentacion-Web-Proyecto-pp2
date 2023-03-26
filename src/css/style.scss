@@ -178,8 +178,6 @@ body {
 }
 
 /* End Section-Cover*/
-
-
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
@@ -226,6 +224,7 @@ img {
 .widget-curso {
     margin-bottom: 2rem;
     margin-left: 20px;
+    margin-top: 2rem;
 }
 
 .widget-curso:last-of-type {
@@ -244,7 +243,7 @@ img {
 
 .widget-curso__label,
 .widget-curso__info {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     a{
         color: #007e77;
