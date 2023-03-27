@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+
 /* Nav*/
 .nav .navbar {
   position: fixed;
@@ -18,7 +19,10 @@
 .nav .navbar a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.6rem;
 }
+
+
 .nav .navbar-menu {
   display: flex;
   justify-content: flex-end;
@@ -97,6 +101,7 @@
       opacity: 1;
     }
   }
+
 }
 
 /* End Nav*/
@@ -121,7 +126,11 @@
   cursor: pointer;
   border-radius: 8px;
   margin-top: 70px;
-  margin-right: 100px;
+}
+@media screen and (min-width: 768px) {
+  .section-cod .copy-button {
+    margin-right: 100px;
+  }
 }
 .section-cod .copy-button:hover {
   background-color: #155468;

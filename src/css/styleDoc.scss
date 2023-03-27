@@ -7,113 +7,113 @@
 .nav {
 
   .navbar {
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       background-color: #333;
-       color: #fff;
-       padding: 20px;
-       box-sizing: border-box;
-   }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-   .navbar a {
-       color: #fff;
-       text-decoration: none;
-   }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-   .navbar-menu {
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       list-style: none;
-       margin: 0;
-       padding: 0;
-   }
+  .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-   .navbar-menu li {
-       margin-left: 20px;
-   }
+  .navbar-menu li {
+    margin-left: 20px;
+  }
 
-   .navbar-toggle {
-       display: none;
-   }
+  .navbar-toggle {
+    display: none;
+  }
 
-   @media (max-width: 768px) {
-       .navbar-menu {
-           display: none;
-           position: absolute;
-           left: 0;
-           right: 0;
-           background-color: #333;
-           box-sizing: border-box;
-       }
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      box-sizing: border-box;
+    }
 
-       .navbar-toggle {
-           display: block;
-           position: absolute;
-           top: 10px;
-           right: 10px;
-           color: #fff;
-           background-color: transparent;
-           border: none;
-           font-size: 24px;
-           cursor: pointer;
-           outline: none;
-           z-index: 999;
-       }
+    .navbar-toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none;
+      z-index: 999;
+    }
 
-       .navbar-toggle:focus {
-           outline: none;
-       }
+    .navbar-toggle:focus {
+      outline: none;
+    }
 
-       .navbar-toggle .icon-bar {
-           display: block;
-           width: 22px;
-           height: 2px;
-           margin: 4px 0;
-           background-color: #fff;
-           transition: all 0.2s;
-       }
+    .navbar-toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 4px 0;
+      background-color: #fff;
+      transition: all 0.2s;
+    }
 
-       .navbar-toggle.active .icon-bar:first-child {
-           transform: rotate(45deg) translate(5px, 5px);
-       }
+    .navbar-toggle.active .icon-bar:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
 
-       .navbar-toggle.active .icon-bar:nth-child(2) {
-           opacity: 0;
-       }
+    .navbar-toggle.active .icon-bar:nth-child(2) {
+      opacity: 0;
+    }
 
-       .navbar-toggle.active .icon-bar:last-child {
-           transform: rotate(-45deg) translate(5px, -5px);
-       }
+    .navbar-toggle.active .icon-bar:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
 
-       .navbar-menu.active {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           margin-top: 50px;
-           opacity: 0;
-           animation: slideIn 0.5s ease-in-out forwards;
-       }
+    .navbar-menu.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      opacity: 0;
+      animation: slideIn 0.5s ease-in-out forwards;
+    }
 
-       .navbar-menu.active li {
-           margin: 10px 0;
-           text-align: center;
-       }
+    .navbar-menu.active li {
+      margin: 10px 0;
+      text-align: center;
+    }
 
-       @keyframes slideIn {
-           from {
-               margin-top: 20px;
-               opacity: 0;
-           }
+    @keyframes slideIn {
+      from {
+        margin-top: 20px;
+        opacity: 0;
+      }
 
-           to {
-               margin-top: 50px;
-               opacity: 1;
-           }
-       }
-   }
+      to {
+        margin-top: 50px;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 /* End Nav*/
@@ -136,7 +136,12 @@
     cursor: pointer;
     border-radius: 8px;
     margin-top: 70px;
-    margin-right: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .copy-button {
+      margin-right: 100px;
+    }
   }
 
   /* Estilos para el botón de copiar al pasar el cursor por encima */
@@ -161,6 +166,7 @@
 
 .title-cover {
   padding-top: 100px;
+
   h1 {
     text-align: center;
     font-size: 30px;
